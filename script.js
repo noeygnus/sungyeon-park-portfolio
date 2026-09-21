@@ -41,7 +41,11 @@ const details = {
     meta: [
       ['담당 역할', '기획 · QA · 프론트엔드 · AI'],
       ['사용 기술', 'React · TypeScript · Vite · PostgreSQL · Socket.IO · WebRTC · Python · YOLOv11']
-    ]
+    ],
+    deck: {
+      embed: 'https://www.canva.com/design/DAHReT0M3sY/wtv3jj2lyr-QDYfz_xbOlg/view?embed',
+      url: 'https://www.canva.com/design/DAHReT0M3sY/wtv3jj2lyr-QDYfz_xbOlg/view'
+    }
   },
   housing: {
     label: '프로젝트 03',
@@ -399,6 +403,17 @@ function showDetail(key) {
   link.hidden = !item.url;
   if (item.url) link.href = item.url;
 
+  /* 발표자료는 창을 열 때만 불러온다 */
+  const deck = modal.querySelector('.modal-deck');
+  const frame = deck.querySelector('iframe');
+  deck.hidden = !item.deck;
+  if (item.deck) {
+    frame.src = item.deck.embed;
+    deck.querySelector('.deck-link').href = item.deck.url;
+  } else {
+    frame.removeAttribute('src');
+  }
+
   const meta = modal.querySelector('.modal-meta');
   meta.replaceChildren();
   (item.meta || []).forEach(([name, value]) => {
@@ -431,6 +446,7 @@ modal.addEventListener('click', e => {
 });
 modal.addEventListener('close', () => {
   document.body.style.overflow = '';
+  modal.querySelector('.modal-deck iframe').removeAttribute('src');
 });
 
 /* =========================================================
