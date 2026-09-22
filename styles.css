@@ -31,6 +31,7 @@
 
   /* 강조 규격 — 이 두 값만 쓴다 */
   --b:3px;               /* 모든 테두리 */
+  --dot:10px;            /* 모든 표시등(작은 네모) */
   --sh:6px;              /* 모든 단색 그림자 · 들뜸/눌림은 ±3px */
 
   --pad:clamp(18px,5vw,72px);
@@ -122,7 +123,9 @@ nav{display:flex;gap:10px;font-size:12px}
 nav a{padding:6px 10px;border:var(--b) solid transparent;color:var(--dim);transition:color .15s steps(2),border-color .15s steps(2),background .15s steps(2)}
 nav a:hover,nav a.current{color:var(--ink);border-color:var(--edge);background:var(--panel)}
 
-.theme-toggle{
+/* 머리말 토글 두 개는 같은 규격 */
+.theme-toggle,
+.lang-toggle{
   display:inline-flex;align-items:center;gap:7px;
   margin-left:6px;padding:6px 11px;
   border:var(--b) solid var(--edge);background:var(--panel);
@@ -130,9 +133,14 @@ nav a:hover,nav a.current{color:var(--ink);border-color:var(--edge);background:v
   cursor:pointer;
   transition:background .15s steps(2),color .15s steps(2);
 }
-.theme-toggle span{width:10px;height:10px;background:var(--c-gold);display:block}
-.theme-toggle:hover{background:var(--accent);color:var(--on-accent)}
+.theme-toggle span,
+.lang-toggle span{display:block;width:var(--dot);height:var(--dot)}
+.theme-toggle span{background:var(--c-gold)}
+.lang-toggle span{background:var(--c-green)}
+.theme-toggle:hover,
+.lang-toggle:hover{background:var(--accent);color:var(--on-accent)}
 :root[data-theme="light"] .theme-toggle span{background:var(--c-violet)}
+html[lang="en"] .lang-toggle span{background:var(--c-blue)}
 
 /* =========================================================
    공용 — 픽셀 창
@@ -145,7 +153,7 @@ nav a:hover,nav a.current{color:var(--ink);border-color:var(--edge);background:v
   font-size:11px;letter-spacing:.08em;
 }
 .win-bar span{flex:1;font-family:GalmuriMono11,monospace}
-.win-bar i{width:9px;height:9px;background:#ffffff40;box-shadow:inset 0 0 0 2px currentColor}
+.win-bar i{width:var(--dot);height:var(--dot);background:#ffffff40;box-shadow:inset 0 0 0 2px currentColor}
 .win-body{padding:clamp(16px,2vw,24px)}
 
 .chip{
@@ -180,7 +188,7 @@ nav a:hover,nav a.current{color:var(--ink);border-color:var(--edge);background:v
   padding:7px 13px;border:var(--b) solid var(--edge);background:var(--panel);
   color:var(--ink);font-size:11px;letter-spacing:.1em;
 }
-.tag i{width:8px;height:8px;background:var(--c-green);animation:blink 1.4s steps(2,end) infinite}
+.tag i{width:var(--dot);height:var(--dot);background:var(--c-green);animation:blink 1.4s steps(2,end) infinite}
 .hero h1{
   margin:26px 0 0;
   font-family:Galmuri14,monospace;
@@ -332,9 +340,17 @@ dialog .win-bar{position:sticky;top:0;z-index:2;padding:9px 12px;font-size:12px;
 .close:hover{background:var(--panel);color:var(--ink)}
 dialog h2{font-family:Galmuri11,monospace;font-size:22px;line-height:1.6}
 .modal-period{margin:12px 0 0;color:var(--c-blue);font-size:14px;font-weight:700}
-.modal-body{margin-top:20px}
-.modal-body p{margin:0 0 16px;color:var(--text-2);font-size:14px;line-height:1.95}
-.modal-body p:last-child{margin-bottom:0}
+.modal-body{margin-top:22px}
+.body-block{margin-bottom:22px}
+.body-block:last-child{margin-bottom:0}
+.body-label{
+  display:inline-flex;align-items:center;gap:8px;
+  margin:0 0 8px;
+  font-family:Galmuri11,monospace;font-size:12px;letter-spacing:.06em;
+  color:var(--accent);
+}
+.body-label:before{content:"";width:var(--dot);height:var(--dot);background:var(--accent)}
+.body-block p{margin:0;color:var(--text-2);font-size:14px;line-height:1.95}
 .project-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:12px;margin:24px 0}
 .project-gallery[hidden]{display:none}
 .project-gallery figure{margin:0;border:var(--b) solid var(--edge);background:var(--sunk);overflow:hidden;line-height:0}

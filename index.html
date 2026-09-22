@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
 <link rel="stylesheet" href="styles.css?v=20260921-deck">
-<script>try{var t=localStorage.getItem("theme");if(t==="light")document.documentElement.dataset.theme="light"}catch(e){}</script>
+<script>try{var t=localStorage.getItem("theme");if(t==="light")document.documentElement.dataset.theme="light";if(localStorage.getItem("lang")==="en")document.documentElement.lang="en"}catch(e){}</script>
 </head>
 
 <body>
@@ -25,6 +25,7 @@
     <a href="#awards">기록</a>
     <a href="#contact">연락처</a>
     <button class="theme-toggle" type="button" aria-label="화면 밝기 전환"><span></span>낮</button>
+    <button class="lang-toggle" type="button" aria-label="Switch language"><span></span>EN</button>
   </nav>
 </header>
 
@@ -33,13 +34,13 @@
   <!-- 첫 화면 -->
   <section class="hero" id="home">
     <div class="hero-inner">
-      <p class="tag" data-reveal><i></i>서비스 기획 · 개발</p>
+      <p class="tag" data-reveal><i></i>서비스 기획 · 비즈니스</p>
       <h1>
         <span class="l"><b>관찰하고,</b></span>
         <span class="l"><b>설계하고,</b></span>
         <span class="l accent"><b>끝까지 만듭니다.</b></span>
       </h1>
-      <p class="lead" data-reveal>사용자의 문제를 발견하고 방향을 설계합니다. 기획과 개발, 데이터를 연결해 실제로 작동하는 서비스까지 완성하는 박성연입니다.</p>
+      <p class="lead" data-reveal>사용자가 어디서 멈추는지 찾아 서비스의 방향을 정합니다. 직접 만들어 본 경험이 있어 실현 가능한 범위로 기획하고, 데이터로 결과를 확인하는 박성연입니다.</p>
       <a class="btn" href="#projects" data-reveal>▶ 프로젝트 보기</a>
     </div>
 
@@ -55,9 +56,9 @@
         </div>
         <p class="player-focus">사용자가 이해하고 선택할 수 있는 서비스를 기획합니다.</p>
         <dl>
-          <div><dt>전공</dt><dd>경영학(주) 컴퓨터공학(복)</dd></div>
+          <div><dt>전공</dt><dd>경영학(주) · 컴퓨터공학(복)</dd></div>
           <div><dt>현재</dt><dd>삼성청년SW·AI아카데미</dd></div>
-          <div><dt>관심</dt><dd>기획 · 금융 · 데이터</dd></div>
+          <div><dt>관심</dt><dd>기획 · 금융 · 데이터 · AI</dd></div>
         </dl>
       </div>
     </aside>
@@ -163,13 +164,13 @@
     <div class="stage-head" data-reveal>
       <p class="chip">04</p>
       <h2>대외활동</h2>
-      <span class="stage-sub">4건</span>
+      <span class="stage-sub">4건 · 항목을 누르면 상세가 열립니다</span>
     </div>
     <ul class="rows">
-      <li class="row" data-detail="act-ssafy" tabindex="0" role="button" data-reveal><b class="row-date">2026.01.07 — 2026.12.01</b><div><h3>삼성청년SW·AI아카데미</h3><p>삼성전자 · 고용노동부 주관 SW·AI 집중 교육</p></div><span class="badge">1,725시간</span></li>
-      <li class="row" data-reveal><b class="row-date">2023.06 — 2024.12.12</b><div><h3>글로벌 경영실무자 양성과정</h3><p>한국산업인력공단</p></div><span class="badge">이수</span></li>
+      <li class="row" data-detail="act-ssafy" tabindex="0" role="button" data-reveal><b class="row-date">2026.01.07 — 2026.12.01</b><div><h3>삼성청년SW·AI아카데미</h3><p>삼성전자 · 고용노동부 주관 SW·AI 집중 교육 · 1,725시간 과정</p></div><span class="badge">진행 중</span></li>
+      <li class="row" data-detail="act-global" tabindex="0" role="button" data-reveal><b class="row-date">2023.06 — 2024.12.12</b><div><h3>글로벌 경영실무자 양성과정</h3><p>한국산업인력공단</p></div><span class="badge">이수</span></li>
       <li class="row" data-detail="act-english" tabindex="0" role="button" data-reveal><b class="row-date">2024.06.30 — 2024.07.27</b><div><h3>영어 집중 교육 과정</h3><p>Jocson College ESL Center · 필리핀 현지 연수</p></div><span class="badge">200시간</span></li>
-      <li class="row" data-reveal><b class="row-date">2023.03 — 2023.12</b><div><h3>경제·경영 동아리</h3><p>우산대여사업 운영</p></div><span class="badge">동아리</span></li>
+      <li class="row" data-detail="act-club" tabindex="0" role="button" data-reveal><b class="row-date">2023.03 — 2023.12</b><div><h3>경제·경영 동아리</h3><p>우산대여사업 운영</p></div><span class="badge">동아리</span></li>
     </ul>
   </section>
 
@@ -196,7 +197,7 @@
       <span class="stage-sub">학력 1건 · 장학 8건 · 누적 7,292,000원</span>
     </div>
     <ul class="rows">
-      <li class="row" data-reveal><b class="row-date">2021.03.01 — 2025.02.13</b><div><h3>경영학(주) 컴퓨터공학(복)</h3><p>143학점 이수 · 학사 졸업</p></div><span class="badge">3.83 / 4.5</span></li>
+      <li class="row" data-reveal><b class="row-date">2021.03.01 — 2025.02.13</b><div><h3>경영학(주) · 컴퓨터공학(복)</h3><p>143학점 이수 · 학사 졸업</p></div><span class="badge">3.83 / 4.5</span></li>
       <li class="row" data-reveal><b class="row-date">2025.02.24</b><div><h3>우수프로젝트장학금</h3><p>교내 장학</p></div><span class="badge">700,000원</span></li>
       <li class="row" data-reveal><b class="row-date">2024.08.19</b><div><h3>교수추천장학금</h3><p>교내 장학</p></div><span class="badge">1,000,000원</span></li>
       <li class="row" data-reveal><b class="row-date">2024.02.23</b><div><h3>교수추천장학금</h3><p>교내 장학</p></div><span class="badge">1,800,000원</span></li>
@@ -239,6 +240,7 @@
   </div>
 </dialog>
 
-<script src="script.js?v=20260921-deck"></script>
+<script src="i18n.js?v=20260922-deep"></script>
+<script src="script.js?v=20260922-deep"></script>
 </body>
 </html>
