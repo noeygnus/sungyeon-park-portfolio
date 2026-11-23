@@ -31,7 +31,7 @@ const details = {
     url: 'https://j15a401.p.ssafy.io/'
   },
   room: {
-    label: '프로젝트 02',
+    label: '프로젝트 03',
     title: '방방봐 (방을 방송으로 봐)',
     period: '2026.07.13 — 2026.08.14',
     sections: [
@@ -51,7 +51,7 @@ const details = {
     }
   },
   housing: {
-    label: '프로젝트 03',
+    label: '프로젝트 04',
     title: 'AI 청약네비',
     period: '2026.05.01 — 2026.06.28',
     sections: [
@@ -72,7 +72,7 @@ const details = {
     ]
   },
   plant: {
-    label: '프로젝트 04',
+    label: '프로젝트 05',
     title: '정원지키미 (Grow-Keeper)',
     period: '2026.04.12 — 2026.04.20',
     sections: [
@@ -86,7 +86,7 @@ const details = {
     ]
   },
   busan: {
-    label: '프로젝트 05',
+    label: '프로젝트 06',
     title: '부산투어리즘',
     period: '2023.05.02 — 2023.06.17',
     sections: [
@@ -99,16 +99,37 @@ const details = {
       ['사용 기술', 'JavaScript · React · TypeScript · MySQL']
     ]
   },
+  wigram: {
+    label: '프로젝트 02 · CLIENT WORK',
+    title: '안바름을 이겨라',
+    period: '와이그램 외주 프로젝트',
+    sections: [
+      ['프로젝트', '와이그램과 함께 진행한 외주 프로젝트입니다. 외부 클라이언트의 요구사항을 실제 사용 흐름에 맞는 제품 경험으로 구체화했습니다.'],
+      ['참여', '프로젝트 진행 과정에 참여하며 요구사항을 정리하고, 서비스가 사용되는 맥락을 고려해 작업했습니다.']
+    ],
+    meta: [['프로젝트 유형', '외주 프로젝트'], ['클라이언트', '와이그램']]
+  },
 
   /* --- 수상 --- */
   'award-ssafy': {
     label: '수상',
+    title: '핀테크 프로젝트 「주주 될래말래?」',
+    period: '2026.07.09 · 삼성전자',
+    sections: [
+      ['문제 정의', '경제는 어렵고 투자는 무섭다는 인식 때문에 시작 자체를 미루는 사람이 많습니다. 학습과 경험이 분리된 문제를 해결하기 위해, 돈을 잃지 않는 환경에서 경제를 배우고 직접 판단해 보는 흐름을 설계했습니다.'],
+      ['내 역할', '팀원으로 서비스 기획과 기능 구현에 참여했습니다. 퀴즈 보상으로 모의투자 자금을 얻는 흐름과 주요 화면을 구체화하고, 기능별 테스트와 결과물 통합을 진행했습니다.'],
+      ['결과', '실제 과거 주가로 모의투자를 경험하고 AI 브리핑·용어 챗봇으로 학습을 이어가는 핀테크 서비스를 완성했습니다. 학습과 행동을 연결한 경험을 인정받아 우수상을 받았습니다.']
+    ],
+    meta: [['역할', '팀원'], ['결과', '우수상']]
+  },
+  'award-ssafy-progress': {
+    label: '수상',
     title: '삼성청년 SW·AI 아카데미 관통 프로젝트',
     period: '2026.07.09 · 삼성전자',
     sections: [
-      ['문제 정의', '금융상품은 많지만 자신의 투자 성향에 맞는 상품을 직접 비교하고 고르기는 어렵다는 점에 주목했습니다. 정보가 부족해서가 아니라 비교 기준이 없어서 못 고른다고 봤습니다.'],
-      ['내 역할', '팀원으로 서비스 기획과 기능 구현에 참여했고, 추천 결과와 금융정보를 쉽게 확인할 수 있도록 화면 구성과 흐름을 구체화했습니다. 기능별 테스트와 팀원 간 결과물 통합에 참여했고, Notion으로 진행 내용을 문서화하며 개발 내용을 공유했습니다.'],
-      ['결과', '생성형 AI와 금융 데이터로 투자 성향에 맞는 상품을 제안하는 로보어드바이저를 완성했습니다. 정보를 제공하는 데 그치지 않고 사용자가 자기 상황에 맞춰 이해하고 비교하도록 구현한 점을 인정받아 우수상을 받았습니다.']
+      ['문제 정의', '금융상품은 많지만 자신의 투자 성향에 맞는 상품을 직접 비교하고 고르기는 어렵다는 점에 주목했습니다. 정보가 부족해서가 아니라 비교 기준이 없어서 선택하지 못한다고 봤습니다.'],
+      ['내 역할', '팀원으로 서비스 기획과 기능 구현에 참여했고, 추천 결과와 금융정보를 쉽게 확인하도록 화면 구성과 흐름을 구체화했습니다. 기능별 테스트와 결과물 통합, 진행 내용 문서화에도 참여했습니다.'],
+      ['결과', '생성형 AI와 금융 데이터로 투자 성향에 맞는 상품을 제안하는 로보어드바이저를 완성했습니다. 사용자가 자기 상황에 맞춰 정보를 이해하고 비교하도록 구현한 점을 인정받아 우수상을 받았습니다.']
     ],
     meta: [['역할', '팀원'], ['결과', '우수상']]
   },
@@ -491,6 +512,26 @@ modal.addEventListener('close', () => {
   document.body.style.overflow = '';
   modal.querySelector('.modal-deck iframe').removeAttribute('src');
 });
+
+const credentialNotes = {
+  adsp: ['데이터를 읽고, 다음 경험을 설계합니다.', 'ADsP는 데이터 이해와 분석 기획 역량을 갖췄다는 자격 단계입니다. 포트폴리오에서는 데이터 관점으로 제품 개선의 질문을 설계하는 기반으로 활용합니다.', 3],
+  ga: ['행동 데이터를 제품의 언어로 번역합니다.', 'Google Analytics 자격을 기반으로 유입부터 전환까지의 흐름을 살피고, 다음 실험을 위한 가설을 정리합니다.', 4],
+  opic: ['명확한 언어로 팀과 고객을 연결합니다.', 'OPIc IH는 영어 커뮤니케이션 자격 단계입니다. 다양한 배경의 구성원과도 맥락을 맞추며 협업할 수 있는 기반을 보여줍니다.', 2],
+  excel: ['복잡한 정보를 실행 가능한 표로 정리합니다.', 'MOS Excel Expert는 도구 활용 자격 단계입니다. 산재한 정보를 빠르게 구조화하고, 팀이 판단할 수 있는 형태로 정리합니다.', 2],
+  license: ['필요한 순간, 현장으로 먼저 갑니다.', '운전면허 2종 보통은 자격 단계까지 확인된 항목입니다. 상황과 업무 환경에 유연하게 대응합니다.', 2]
+};
+const credentialCards = document.querySelectorAll('.credential-card');
+const credentialScreen = document.querySelector('.credential-screen');
+if (credentialCards.length && credentialScreen) {
+  credentialCards.forEach(card => card.addEventListener('click', () => {
+    const [title, copy, level] = credentialNotes[card.dataset.credential];
+    credentialCards.forEach(item => { item.classList.toggle('is-active', item === card); item.setAttribute('aria-pressed', String(item === card)); });
+    credentialScreen.querySelector('.credential-title').textContent = title;
+    credentialScreen.querySelector('.credential-copy').textContent = copy;
+    credentialScreen.querySelector('.credential-level').textContent = `${String(level).padStart(2, '0')} / 05`;
+    credentialScreen.querySelectorAll('.credential-meter i').forEach((meter, index) => meter.classList.toggle('is-off', index >= level));
+  }));
+}
 
 /* =========================================================
    화면 밝기 전환 — 선택은 브라우저에 남는다
