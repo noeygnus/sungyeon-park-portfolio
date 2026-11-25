@@ -27,6 +27,7 @@ window.I18N_EN = {
 
     /* ── 첫 화면 ── */
     '서비스 기획 · 비즈니스': 'SERVICE PLANNING · BUSINESS',
+    '서비스 기획 · 게임 · 비즈니스': 'SERVICE PLANNING · GAMES · BUSINESS',
     '관찰하고,': 'Observe,',
     '설계하고,': 'design,',
     '끝까지 만듭니다.': 'and ship it.',
@@ -46,6 +47,9 @@ window.I18N_EN = {
     '경영학(주) · 컴퓨터공학(복)': 'Business Admin · Computer Science',
     '삼성청년SW·AI아카데미': 'Samsung SW·AI Academy (SSAFY)',
     '기획 · 금융 · 데이터 · AI': 'Planning · Finance · Data · AI',
+    '기획 · 게임 · 개발 · 데이터 · AI': 'Planning · Games · Development · Data · AI',
+    '↗ 포트폴리오 보러가기': '↗ View portfolio',
+    '더 많은 프로젝트와 기록은 포트폴리오에서 확인해보세요.': 'Explore more projects and records in the portfolio.',
 
     /* ── 섹션 제목 ── */
     '만든 서비스 5개 · 카드를 누르면 상세가 열립니다': '5 services · tap a card for details',
@@ -53,13 +57,17 @@ window.I18N_EN = {
     '3건 · 항목을 누르면 상세가 열립니다': '3 records · tap a row for details',
     '경력': 'Experience',
     '2건 · 항목을 누르면 상세가 열립니다': '2 records · tap a row for details',
-    '대외활동': 'Activities',
-    '4건': '4 records',
+    '교육 내역': 'Education & Training',
     '자격 · 어학': 'Certificates · Language',
     '학력 · 장학': 'Education · Scholarships',
     '학력 1건 · 장학 8건 · 누적 7,292,000원': '1 degree · 8 scholarships · KRW 7,292,000 total',
 
     /* ── 프로젝트 카드 ── */
+    '와이그램 기업 외주 개발 프로젝트': 'Wigram client development project',
+    '안바름을 이겨라': 'Beat Anbarum',
+    '알람과 미션으로 건강한 기상 습관을 만드는 모바일 서비스':
+      'A mobile service that builds better wake-up habits through alarms and missions',
+    '프로젝트 보기 ▶': 'View project ▶',
     '금융 학습 · 모의투자': 'Finance learning · Mock investing',
     '주주 될래말래?': 'Will You Be a Shareholder?',
     '실제 주가 데이터를 게임처럼 배우고 경험하는 서비스':
@@ -87,9 +95,10 @@ window.I18N_EN = {
     '데이터': 'Data',
 
     /* ── 수상 ── */
-    '삼성청년 SW·AI 아카데미 관통 프로젝트': 'SSAFY Capstone Project',
-    '생성형 AI와 금융 데이터를 활용한 로보어드바이저 서비스 · 팀원':
-      'Robo-advisor built with generative AI and financial data · Team member',
+    '삼성청년 SW·AI 아카데미 특화 프로젝트 「주주 될래말래」': 'SSAFY Specialized Project “Will You Be a Shareholder?”',
+    '삼성청년 SW·AI 아카데미 1학기 프로젝트 「AI 청약네비」': 'SSAFY First-Semester Project “AI Housing Navigator”',
+    '맞춤 청약 판단을 돕는 AI 청약네비 서비스 · 팀원':
+      'AI Housing Navigator for personalized subscription decisions · Team member',
     '우수상': 'Excellence Award',
     '소프트웨어 모델링 경진대회': 'Software Modeling Competition',
     '신호등 상태와 동작을 객체 단위로 설계 · 팀장':
@@ -107,16 +116,15 @@ window.I18N_EN = {
       'Supported acquisition and local tax work; reorganized tax records',
     '인턴': 'Intern',
 
-    /* ── 대외활동 ── */
-    '삼성전자 · 고용노동부 주관 SW·AI 집중 교육 · 1,725시간 과정':
-      'Intensive SW·AI program by Samsung Electronics and the Ministry of Employment and Labor · 1,725-hour course',
+    /* ── 교육 내역 ── */
+    '삼성전자 · SW·AI 실무 중심 교육 15기':
+      'Samsung Electronics · SW·AI practical training, Cohort 15',
     '진행 중': 'In progress',
-    '글로벌 경영실무자 양성과정': 'Global Business Practitioner Program',
-    '한국산업인력공단': 'Human Resources Development Service of Korea',
+    '글로벌 경영 실무자 양성과정': 'Global Business Practitioner Program',
+    '한국산업인력공단 · 글로벌 비즈니스 실무 교육': 'HRD Korea · Global business practice training',
     '이수': 'Completed',
-    '영어 집중 교육 과정': 'Intensive English Program',
-    'Jocson College ESL Center · 필리핀 현지 연수':
-      'Jocson College ESL Center · On site in the Philippines',
+    'English Proficiency Course': 'English Proficiency Course',
+    'Jocson College ESL Center · 필리핀': 'Jocson College ESL Center · Philippines',
     '200시간': '200 hrs',
     '경제·경영 동아리': 'Economics & Business Club',
     '우산대여사업 운영': 'Ran the campus umbrella rental service',
@@ -161,7 +169,7 @@ window.I18N_EN = {
   /* ── 상세 창 내용 ── */
   details: {
     stock: {
-      label: 'Project 01',
+      label: 'Project 02',
       title: 'Will You Be a Shareholder?',
       sections: [
         ['Why we built it', 'Plenty of people put off investing entirely, because economics feels hard and investing feels risky. We tied the learning step and the doing step into one flow, so people could get a feel for it in an environment where they cannot lose money.'],
@@ -174,8 +182,19 @@ window.I18N_EN = {
         ['Stack', 'React · TypeScript · Phaser.js · Spring Boot · Java · Socket.IO · REST API']
       ]
     },
+    wigram: {
+      label: 'Project 01 · Client Work',
+      title: 'Beat Anbarum',
+      period: 'Wigram client project · Latest project',
+      sections: [
+        ['Project', 'A client project with Wigram: a mobile service that helps people build a steady wake-up habit by completing missions to turn off alarms and sharing their records with friends.'],
+        ['Core experience', 'The flow connects alarm setup, mission selection, streak checks, group participation and shop use into one daily wake-up routine.'],
+        ['Screen design', 'Each screen has a clear purpose around the moments before and after waking up, using characters and record elements to encourage repeat use.']
+      ],
+      meta: [['Project type', 'Client work'], ['Client', 'Wigram'], ['Platform', 'Mobile web · app UI']]
+    },
     room: {
-      label: 'Project 02',
+      label: 'Project 03',
       title: 'BangBangBwa',
       sections: [
         ['Why we built it', 'Viewing a place means travelling a long way, and what you find often looks nothing like the photos. A plain video call is not enough to catch defects either — the problem came straight out of that everyday friction.'],
@@ -190,7 +209,7 @@ window.I18N_EN = {
       ]
     },
     housing: {
-      label: 'Project 03',
+      label: 'Project 04',
       title: 'AI Housing Navigator',
       sections: [
         ['Why we built it', 'Housing subscription notices and schedules are already public. The real problem is that eligibility rules are complex and the jargon is unfamiliar, so people cannot tell whether a given notice is one they can even apply to.'],
@@ -204,7 +223,7 @@ window.I18N_EN = {
       ]
     },
     plant: {
-      label: 'Project 04',
+      label: 'Project 05',
       title: 'Grow-Keeper',
       sections: [
         ['Why we built it', 'Plant information and care records live in separate places, so there is no trace of what was done and when. The service ties the two together.'],
@@ -217,7 +236,7 @@ window.I18N_EN = {
       ]
     },
     busan: {
-      label: 'Project 05',
+      label: 'Project 06',
       title: 'Busan Tourism',
       sections: [
         ['Why we built it', 'Looking up tourist information and planning the trip itself are usually separate chores; we wanted them in one flow.'],
@@ -232,36 +251,47 @@ window.I18N_EN = {
 
     'award-ssafy': {
       label: 'Award',
-      title: 'SSAFY Capstone Project',
+      title: 'SSAFY Specialized Project [Will You Be a Shareholder?]',
+      period: '2026.09.28 · Samsung Electronics',
+      sections: [
+        ['Awarded project', 'A fintech service that joins economic learning and mock investing with real market-price data.'],
+        ['Contribution', 'I shaped the core experience across planning and QA: quiz rewards, mock investing, market briefings and investment records, while contributing to implementation and validation.'],
+        ['Outcome', 'The completed service was recognised with an Excellence Award in the SSAFY fintech project.']
+      ],
+      meta: [['Award', 'Excellence Award'], ['Host', 'Samsung Electronics'], ['Role', 'Planning · QA · Implementation support']]
+    },
+    'award-ssafy-progress': {
+      label: 'Award',
+      title: 'SSAFY First-Semester Project [AI Housing Navigator]',
       period: '2026.07.09 · Samsung Electronics',
       sections: [
-        ['The problem', 'There is no shortage of financial products, but comparing them against your own investment style and picking one is genuinely hard.'],
-        ['My role', 'As a team member I worked on service planning and feature implementation, shaping the layout and flow so recommendations and financial information were easy to read. I documented progress in Notion so the team could share work and merge features cleanly.'],
-        ['Outcome', 'A robo-advisor that recommends products matched to an investment style using generative AI and financial data. The award recognised that it went beyond serving data — users could understand and compare products against their own situation.']
+        ['Awarded project', 'A personalized housing-subscription service that uses income, cash and debt to surface eligible notices and a concrete funding plan.'],
+        ['Contribution', 'I worked on planning and implementation, connecting condition entry, notice discovery, a funding roadmap and an AI coach in one user flow.'],
+        ['Outcome', 'The service earned an Excellence Award for turning complex subscription information into a user’s next decision and action.']
       ],
-      meta: [['Role', 'Team member'], ['Result', 'Excellence Award']]
+      meta: [['Award', 'Excellence Award'], ['Host', 'Samsung Electronics'], ['Role', 'Planning · Implementation support']]
     },
     'award-model': {
       label: 'Award',
       title: 'Software Modeling Competition',
       period: '2024.05',
       sections: [
-        ['The problem', 'A team project on how to structure traffic-light operation more efficiently.'],
-        ['My role', 'As team lead I broke the lights’ states and behaviors into objects and designed the transition structure with the team. I split the work, wrote up the results and presented them.'],
-        ['Outcome', 'Breaking the problem into functional units earned the Excellence Award.']
+        ['Awarded project', 'A software-modeling project that structures traffic-light operation by separating states and actions into objects.'],
+        ['Contribution', 'As team lead, I set the modeling direction, coordinated tasks, designed state transitions and presented the result.'],
+        ['Outcome', 'The approach of breaking down complex behavior into clear functional units earned the Excellence Award.']
       ],
-      meta: [['Role', 'Team lead'], ['Result', 'Excellence Award']]
+      meta: [['Award', 'Excellence Award'], ['Role', 'Team lead'], ['Field', 'Object-oriented modeling']]
     },
     'award-startup': {
       label: 'Award',
       title: 'Innovative Startup Script Competition',
       period: '2023.12',
       sections: [
-        ['The problem', 'Calling a flight attendant over can feel like an imposition for passengers, while handling repeated individual requests is a burden for crew — a problem on both sides.'],
-        ['My role', 'As team lead I developed the idea into an in-flight kiosk that lets passengers send what they need from their seat in one go, mapped the service flow and steered the pitch.'],
-        ['Outcome', 'A concept that improved things for passengers and crew alike won the Excellence Award.']
+        ['Awarded project', 'An in-flight kiosk service concept that lets passengers submit requests from their seats while helping crew manage them efficiently.'],
+        ['Contribution', 'As team lead, I developed the idea, structured the user flow and coordinated the team’s presentation direction.'],
+        ['Outcome', 'The service plan earned the Excellence Award by reducing both passenger friction and repetitive crew tasks.']
       ],
-      meta: [['Role', 'Team lead'], ['Result', 'Excellence Award']]
+      meta: [['Award', 'Excellence Award'], ['Role', 'Team lead'], ['Field', 'Service planning']]
     },
 
     'career-nb': {
@@ -287,25 +317,25 @@ window.I18N_EN = {
     },
 
     'act-ssafy': {
-      label: 'Activity',
+      label: 'Education & Training',
       title: 'Samsung SW·AI Academy (SSAFY)',
-      period: '2026.01.07 — 2026.12.01 · Samsung Electronics, Ministry of Employment and Labor',
+      period: '2026.01 — 2026.12 · Samsung Electronics',
       sections: [
-        ['The program', 'Currently completing a 1,725-hour intensive SW and AI program run by Samsung Electronics and the Ministry of Employment and Labor.'],
-        ['What I do', 'Building digital finance services on financial data, from service planning through to implementation.'],
-        ['Outcome', 'Our first-semester project won an Excellence Award.']
+        ['Program', 'A practical SW and AI program run by Samsung Electronics, where I am building data processing, analysis and AI capabilities as a Cohort 15 participant.'],
+        ['Learning', 'Repeated team projects have taken me through planning, implementation and validation, with a focus on applying data and AI to real problems.'],
+        ['Outcome', 'Earned two project Excellence Awards and was selected twice as a Best Member for learning performance and collaboration.']
       ],
-      meta: [['Role', 'Trainee (in progress)'], ['Course', '1,725 hrs · scheduled to finish 2026.12']]
+      meta: [['Host', 'Samsung Electronics'], ['Program', 'SW·AI practical training, Cohort 15'], ['Status', 'Expected completion in 2026.12']]
     },
     'act-global': {
-      label: 'Activity',
+      label: 'Education & Training',
       title: 'Global Business Practitioner Program',
-      period: '2023.06 — 2024.12.12 · Human Resources Development Service of Korea',
+      period: '2023.06 — 2024.12 · Human Resources Development Service of Korea',
       sections: [
-        ['The program', 'Completed the Global Business Practitioner Program run by the Human Resources Development Service of Korea, over about a year and a half.'],
-        ['What I took away', 'A long program covering business practice end to end, which gave me a chance to revisit what I had studied in my major from a working perspective.']
+        ['Program', 'Completed HRD Korea’s Global Business Practitioner Program, a long-form course in global business and practical management.'],
+        ['Growth', 'Expanded my international business perspective and translated that experience into final-round offers from three U.S. companies.']
       ],
-      meta: [['Host', 'HRD Korea'], ['Length', 'About 18 months']]
+      meta: [['Host', 'HRD Korea'], ['Length', 'About 18 months'], ['Outcome', 'Final-round offers from 3 U.S. companies']]
     },
     'act-club': {
       label: 'Activity',
@@ -318,14 +348,14 @@ window.I18N_EN = {
       meta: [['Role', 'Club member'], ['Ran', 'Umbrella rental service']]
     },
     'act-english': {
-      label: 'Activity',
-      title: 'Intensive English Program',
-      period: '2024.06.30 — 2024.07.27 · Jocson College ESL Center',
+      label: 'Education & Training',
+      title: 'English Proficiency Course',
+      period: '2024.06 — 2024.07 · Jocson College ESL Center',
       sections: [
-        ['The program', 'Completed roughly 200 hours of intensive English training on site in the Philippines.'],
-        ['What I took away', 'Sharper communication, plus the experience of settling into an unfamiliar culture through daily life there and meeting people from different backgrounds.']
+        ['Program', 'Completed about 200 hours of speaking and business-communication focused English instruction at an ESL center in the Philippines.'],
+        ['Experience', 'Built practical communication skills and adaptability through daily life and conversations with learners from diverse national backgrounds.']
       ],
-      meta: [['Hours', '200 hrs'], ['Location', 'Philippines']]
+      meta: [['Host', 'Jocson College ESL Center'], ['Hours', 'About 200 hrs'], ['Location', 'Philippines']]
     }
   }
 };
